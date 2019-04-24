@@ -6,13 +6,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          
-          <p>
-        Chat-app
-          </p>
-          
-        </header>
+      <input type="text"/>
+      <button>reset</button>
+      <p className="text"></p>
+       
       </div>
     );
   }
