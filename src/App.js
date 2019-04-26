@@ -16,13 +16,17 @@ class App extends Component {
     })
 
   }
+  handleResetClick =()=>
+  this.setState({
+    text: ""
+  })
 
   render() {
     return (
       <div className="App">
       <input value ={this.setState.value} onChange={this.handleInputAddText} type="text"/>
-      <button>reset</button>
-      <p className="text">{this.state.text}</p>
+      <button onClick={this.handleResetClick}>reset</button>
+      <p className="text">{this.state.text.toUpperCase()}</p>
        
       </div>
     );
