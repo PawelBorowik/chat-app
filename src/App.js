@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <input onChange={this.handleInputAddText} type="text"/>
+      <input value ={this.setState.value} onChange={this.handleInputAddText} type="text"/>
       <button>reset</button>
       <p className="text">{this.state.text}</p>
        
