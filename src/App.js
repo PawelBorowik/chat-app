@@ -6,9 +6,14 @@ class App extends Component {
 
   state={
 
+    text:""
+
   }
   handleInputAddText=(e)=>{
     console.log(e.target.value)
+    this.setState({
+      text: e.target.value
+    })
 
   }
 
@@ -17,7 +22,7 @@ class App extends Component {
       <div className="App">
       <input onChange={this.handleInputAddText} type="text"/>
       <button>reset</button>
-      <p className="text"></p>
+      <p className="text">{this.state.text}</p>
        
       </div>
     );
